@@ -44,23 +44,26 @@ es el motor d'emmagatzematge ![](https://github.com/ahmedwaix/Storage-Engine/blo
 
 Per poder canviar el motor de emmagatzematge i aquest passi al myISAM hem de anar a la ruta següent i editar l'arxiu "my.cnf"
 
+
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image3.png)
 
-Una vegada a dins de el arxiu my.cnf hem de posar el seguit paràmetre
-per poder canviar el motor de emmagatzematge una vegada fet això guardem
-y sortim.
+
+Una vegada a dins de l'arxiu "my.cnf" hem de posar el següentt paràmetre
+per tal de poder canviar el motor d'emmagatzematge. Una vegada fet, guardem
+i sortim!
+
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image4.png)
 
-Tornem al mysql i introduïm la sentencia SHOW ENGINES i es veu que
+
+Ara hem de tornar al mysql aquesta vegada introduïm la sentencia **"SHOW ENGINES"** i es veu que
 MyISAM a passat per defecte com motor de emmagatzematge.
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image5.png)
 
 **3\. Com podem saber quin és el motor d'emmagatzematge per defecte?**
 
-Per saber quin es el motor de emmagatzematge per defecte tenim que
-utilitzar la següent sentencia mysql.
+Per saber quin es el motor de emmagatzematge per defecte hem d'utilitzar la següent sentencia mysql.
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image6.png)
 
@@ -70,8 +73,8 @@ incrustat de tipus clau-valor). Aquest tipus d'emmagatzematge està
 optimitzat per ser molt eficient en les escriptures amb lectures
 acceptables.**
 
-Per poder instal·lar el MyRocks i activar-ho principalment hem de utilitzar la comanda següent per instal·lar el MyRocks i
-li donarem que si per iniciar la instal·lació.
+Per poder instal·lar el MyRocks i activar-ho, principalment hem d'utilitzar la comanda següent per tal d'instal·lar el MyRocks i
+li donarem que si quan ens demani si estem d'accors per iniciar la instal·lació.
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image7.png)
 
@@ -79,13 +82,13 @@ Sortirà el següent missatge que ja esta instal·lat el RocksDB.
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image8.png)
 
-Per poder activar-ho en el mysql tenim que utilitzar la següent
-comanda i instal·larà el pulgin engine de RocksDB
+Per poder activar-ho en el mysql hem d'utilitzar la següent
+comanda i instal·larà el plugin engine de RocksDB
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image9.png)
 
 Per assegurar que esta activat utilitzarem la següent sentencia i
-veiem que el RocksDB esta activat.
+tal com es veu RocksDB esta activat.
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image10.png)
 
