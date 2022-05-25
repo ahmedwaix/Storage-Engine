@@ -128,14 +128,18 @@ Ara fem un **"cat"** per veure el contingut de l'arxiu
 
 **1. Crea una Base de dades amb 2 o 3 taules i insereix-hi contingut.**
 
+Primer creem una base de dades l'anomenem *"rocksdb"*
+
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image18.png)
+
+Seguidament utilitzem la base de dades amb la sentència **"USE"**, i creem 2 taules 
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image19.png)
 
 **2. A quin directori es guarden els fitxers de dades? Fes un llistat de
 a on són els fitxers i què ocupen**
 
-El directori on es guarden els fitxers de dades es en el /var/lib/mysql
+El directori on es guarden els fitxers de dades es en el ***"/var/lib/mysql"***
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image20.png)
 
@@ -143,16 +147,16 @@ El directori on es guarden els fitxers de dades es en el /var/lib/mysql
 faries per canviarlo. Per exemple utilitza Zlib o ZSTD o sense
 compressió.**
 
-Per defecte la compressio de taules son les tres
+Per defecte venen 3 compressions de taules i són  les que es mostren en la captura d'imatge
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image21.png)
 
-SI volem cambiar ho per un sol en especific tendriem que fer las seguent
+SI volem cambiar-ho per un sol en específic, tendriem que fer la següent
 sentencia mysql
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image22.png)
 
-I com es veu se ha canviat la compressio
+I com es veu se ha canviat la compressio a una sola.
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image23.png)
 
@@ -160,27 +164,24 @@ I com es veu se ha canviat la compressio
 
 **1. Desactiva l’opció que ve per defecte de innodb_file_per_table**
 
+Per tal de desactivar l'opcio que ve per defecte de innodb_file_per_table nomes hem de fer un OFF mitjançant un **SET**
+
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image24.png)
 
-Tal i com es veu esta desactivat
+Ara si fem un show  es veu que ja està desactivat
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image25.png)
 
 **2. Quins són els permisos i l'usuari i grup de la carpeta que conté el directori de dades (datadir)**
 
-Els permisos de de la carpeta del directori que es el mysql els te mysql
-tan el propietari y el grup.Els permisos que te el propietari son de
-escritura de lectura i execucio que correspon els tres digits despres de
-la d despres els seguents 3 digits son del grup que te lecura i execucio
-i per ultim els ultims tres digits son altres ususaris que tenen nomes
-execucio..
+Els permisos de la carpeta del directori que es el mysql els te mysql tan el propietari y el grup. Els permisos que te el propietari són d' escritura, de lectura i d'execució que correspon els tres digits despres de la ***"d"*** despres els seguents 3 digits són del grup que te només el permís de lecura i execucio i per ultim els últims tres digits son dels altres ususaris (**OTHERS**), que tenen nomes d'execucio.
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image26.png)
 
 **3. Mostra quina és la mida del tablespace de sistema (System Tablespace)**
 
-Per veure la mida que te utilitzarem la seguent sentencia per veure
-quant pesa i es veu en la image que pesa 12M
+Per veure la mida que te el  utilitzarem la següent sentencia per veure
+quant pesa i tal es veu en la image pesa 12M
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image27.png)
 
@@ -200,8 +201,8 @@ Com es veu al instalar Sakila el ibdata1 a pujat una mica la mida init 0
 
 **5. Quin/quins són els fitxers de dades? A on es troben i quina és la seva mida?**
 
-Els fitxers de dades es troben anant a la ruta seguent /var/lib/mysql i
-com es veu en la captura tenim un arxchiu anomennat ibdata1
+Els fitxers de dades es troben anant a la ruta seguent ***/var/lib/mysql*** i
+com es veu en la captura tenim un arxiu anomenat ibdata1
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes//image30.png)
 
@@ -213,7 +214,7 @@ La seva mida son 12 MB i una mica mes
 
   **1. Canviar la localització del directori de dades a /hd-mysql**
 
-Per poder cambiar la localitzacio primer tenim que anar a la ruta seguent
+Per poder cambiar la localitzacio primer hem d'anar a la ruta següent ***"/etc/my.cnf"****
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image32.png)
 
