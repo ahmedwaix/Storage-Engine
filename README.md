@@ -71,9 +71,7 @@ incrustat de tipus clau-valor). Aquest tipus d'emmagatzematge està
 optimitzat per ser molt eficient en les escriptures amb lectures
 acceptables.**
 
-Per poder instal·lar el MyRocks i activar-ho tenim que fer els següents passos
-
-Primer de tot utilitzem la comanda següent per instal·lar el MyRocks i
+Per poder instal·lar el MyRocks i activar-ho principalment hem de utilitzar la comanda següent per instal·lar el MyRocks i
 li donarem que si per iniciar la instal·lació.
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image7.png)
@@ -126,18 +124,19 @@ Ara fem un nano per veure el seu contingut
 
 # **EXERCICI 3 -- STORAGE ENGINE MyRocks**
 
+** 1. Crea una Base de dades amb 2 o 3 taules i insereix-hi contingut.
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image18.png)
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image19.png)
 
-**3. A quin directori es guarden els fitxers de dades? Fes un llistat de
+**2. A quin directori es guarden els fitxers de dades? Fes un llistat de
 a on són els fitxers i què ocupen**
 
 El directori on es guarden els fitxers de dades es en el /var/lib/mysql
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image20.png)
 
-**4. Quina és la compressió per defecte que utilitza per les taules? Com ho
+**3. Quina és la compressió per defecte que utilitza per les taules? Com ho
 faries per canviarlo. Per exemple utilitza Zlib o ZSTD o sense
 compressió.**
 
@@ -209,23 +208,25 @@ La seva mida son 12 MB i una mica mes
 
 **6. Canvia la configuració del MySQL per:**
 
-   **1.Per poder cambiar la localitzacio primer tenim que anar a la ruta seguent**
+**1. Canviar la localització del directori de dades a /hd-mysql**
 
-   ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image32.png)
+Per poder cambiar la localitzacio primer tenim que anar a la ruta seguent
 
-   Una vegada a dins del arxiu my.cnf canviem la ruta del datadir a la carpeta creada hd-mysql
+![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image32.png)
 
-   ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image33.png)
+Una vegada a dins del arxiu my.cnf canviem la ruta del datadir a la carpeta creada hd-mysql
 
-   I una vegada cambiat això creem els dos ibdatas a la ruta creada amb el parametre seguent
+![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image33.png)
 
-  ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image34.png)
+I una vegada cambiat això creem els dos ibdatas a la ruta creada amb el parametre següent
 
-  Despres de fer això reiniciem el mysql y no podrem entrar al mysql 
+![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image34.png)
+
+Despres de fer això reiniciem el mysql y no podrem entrar al mysql 
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image35.png)
 
-### Tindrem que demanar la contrasenya provisional y fer un secure installation 
+Tindrem que demanar la contrasenya provisional y fer un secure installation 
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image36.png)
 
