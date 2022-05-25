@@ -94,7 +94,7 @@ tal com es veu RocksDB esta activat.
 
 # **ACTIVITAT 2 -- STORAGE ENGINE CSV** 
 
-Per utilitzar el CSV. Primer creem una base de dades amb las següent sentencia.
+Per utilitzar el **CSV**, primer creem una base de dades amb las següent sentencia.
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image11.png)
 
@@ -103,7 +103,7 @@ Ara utilitzarem la següent sentencia per utilitzar la base de dades
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image12.png)
 
 Una vegada fet això creem una taula amb el seus camps que tenen que ser
-NOT NULL i utilitzant el engine CSV
+***NOT NULL*** i utilitzant el engine CSV
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image13.png)
 
@@ -111,16 +111,16 @@ Introduirem dades amb la següent sentencia
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image14.png)
 
-Ara fem una SELECT per ve ure la taula
+Ara fem una ***SELECT*** per ve ure la taula
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image15.png)
 
-Per veure on esta el arxiu CSV tenim que anar a la ruta següent i com es
-veu esta el arxiu albums.CSV
+Per veure on esta l'arxiu CSV hem d'anar a la ruta següent i com es
+veu esta l'arxiu albums.CSV
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image16.png)
 
-Ara fem un nano per veure el seu contingut
+Ara fem un **"cat"** per veure el contingut de l'arxiu
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image17.png)
 
