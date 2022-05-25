@@ -214,7 +214,7 @@ La seva mida son 12 MB i una mica mes
 
   **1. Canviar la localització del directori de dades a /hd-mysql**
 
-Per poder cambiar la localitzacio primer hem d'anar a la ruta següent ***"/etc/my.cnf"****
+Per poder cambiar la localitzacio primer hem d'anar a la ruta següent ***"/etc/my.cnf"***
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image32.png)
 
