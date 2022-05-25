@@ -25,21 +25,20 @@
 
 # **[ÍNDEX]** 
 
-**ACTIVITAT 1. REALITZA I/O RESPON ELS SEGÜENTS APARTATS (obligatòria)
-(1 punts)**
+**ACTIVITAT 1. REALITZA I/O RESPON ELS SEGÜENTS APARTATS (obligatòria)**
 
-1\. Indica quins són els motors d'emmagatzematge que pots utilitzar
+**1\. Indica quins són els motors d'emmagatzematge que pots utilitzar
 (quins estan actius)? Mostra al comanda utilitzada i el resultat
-d'aquesta
+d'aquesta**
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image1.png)Per poder veure els motors d'
 emmagatzematge que estan actius utilitzarem la sentencia show engines
 per veure els que estan activats i com veiem en la captura estan tots
 activats menys el FEDERATED.
 
-2\. Com puc saber quin és el motor d'emmagatzematge per defecte. Mostra
+**2\. Com puc saber quin és el motor d'emmagatzematge per defecte. Mostra
 com canviar aquest paràmetre de tal manera que les noves taules que
-creem a la BD per defecte utilitzin el motor MyISAM?
+creem a la BD per defecte utilitzin el motor MyISAM?**
 
 Per saber quin es el motor d'emmagatzematge per defecte tenim que
 utilitzar la sentencia show engines i es veu en la captura que el InnoDB
@@ -61,18 +60,18 @@ MyISAM a passat per defecte com motor de emmagatzematge.
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image5.png)
 
-3\. Com podem saber quin és el motor d'emmagatzematge per defecte?
+**3\. Com podem saber quin és el motor d'emmagatzematge per defecte?**
 
 **Per saber quin es el motor de emmagatzematge per defecte tenim que
 utilitzar la següent sentencia mysql.**
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image6.png)
 
-4\. Explica els passos per instal·lar i activar l'ENGINE MyRocks.
+**4\. Explica els passos per instal·lar i activar l'ENGINE MyRocks.
 MyRocks és un motor d'emmagatzematge per MySQL basat en RocksDB (SGBD
 incrustat de tipus clau-valor). Aquest tipus d'emmagatzematge està
 optimitzat per ser molt eficient en les escriptures amb lectures
-acceptables.
+acceptables.**
 
 ## Per poder instal·lar el MyRocks i activar-ho tenim que fer els següents passos
 
