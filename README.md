@@ -23,18 +23,16 @@
 **26/05/2022**
 ***
 
-# **[ÍNDEX]** 
-
-**ACTIVITAT 1. REALITZA I/O RESPON ELS SEGÜENTS APARTATS (obligatòria)**
+# **ACTIVITAT 1 -- REALITZA I/O RESPON ELS SEGÜENTS APARTATS**
 
 **1\. Indica quins són els motors d'emmagatzematge que pots utilitzar
 (quins estan actius)? Mostra al comanda utilitzada i el resultat
 d'aquesta**
 
-![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image1.png)Per poder veure els motors d'
+Per poder veure els motors d'
 emmagatzematge que estan actius utilitzarem la sentencia show engines
 per veure els que estan activats i com veiem en la captura estan tots
-activats menys el FEDERATED.
+activats menys el FEDERATED.![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image1.png)
 
 **2\. Com puc saber quin és el motor d'emmagatzematge per defecte. Mostra
 com canviar aquest paràmetre de tal manera que les noves taules que
@@ -62,8 +60,8 @@ MyISAM a passat per defecte com motor de emmagatzematge.
 
 **3\. Com podem saber quin és el motor d'emmagatzematge per defecte?**
 
-**Per saber quin es el motor de emmagatzematge per defecte tenim que
-utilitzar la següent sentencia mysql.**
+Per saber quin es el motor de emmagatzematge per defecte tenim que
+utilitzar la següent sentencia mysql.
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image6.png)
 
@@ -73,34 +71,34 @@ incrustat de tipus clau-valor). Aquest tipus d'emmagatzematge està
 optimitzat per ser molt eficient en les escriptures amb lectures
 acceptables.**
 
-## Per poder instal·lar el MyRocks i activar-ho tenim que fer els següents passos
+Per poder instal·lar el MyRocks i activar-ho tenim que fer els següents passos
 
-**Primer de tot utilitzem la comanda següent per instal·lar el MyRocks i
-li donarem que si per iniciar la instal·lació.**
+Primer de tot utilitzem la comanda següent per instal·lar el MyRocks i
+li donarem que si per iniciar la instal·lació.
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image7.png)
 
-### Sortirà el següent missatge que ja esta instal·lat el RocksDB.
+Sortirà el següent missatge que ja esta instal·lat el RocksDB.
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image8.png)
 
-**Per poder activar-ho en el mysql tenim que utilitzar la següent
-comanda i instal·larà el pulgin engine de RocksDB**
+Per poder activar-ho en el mysql tenim que utilitzar la següent
+comanda i instal·larà el pulgin engine de RocksDB
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image9.png)
 
-**Per assegurar que esta activat utilitzarem la següent sentencia i
-veiem que el RocksDB esta activat.**
+Per assegurar que esta activat utilitzarem la següent sentencia i
+veiem que el RocksDB esta activat.
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image10.png)
 
-#### ACTIVITAT 2 -- STORAGE ENGINE CSV
+# **ACTIVITAT 2 -- STORAGE ENGINE CSV** 
 
-## Per utilitzar el CSV. Primer creem una base de dades amb las següent sentencia.
+Per utilitzar el CSV. Primer creem una base de dades amb las següent sentencia.
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image11.png)
 
-### Ara utilitzarem la següent sentencia per utilitzar la base de dades 
+Ara utilitzarem la següent sentencia per utilitzar la base de dades 
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image12.png)
 
@@ -109,11 +107,11 @@ NOT NULL i utilitzant el engine CSV
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image13.png)
 
-### Introduirem dades amb la següent sentencia
+Introduirem dades amb la següent sentencia
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image14.png)
 
-### Ara fem una SELECT per ve ure la taula
+Ara fem una SELECT per ve ure la taula
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image15.png)
 
@@ -126,22 +124,22 @@ Ara fem un nano per veure el seu contingut
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image17.png)
 
-EXERCICI 3
+# **EXERCICI 3 -- STORAGE ENGINE MyRocks**
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image18.png)
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image19.png)
 
-3\. A quin directori es guarden els fitxers de dades? Fes un llistat de
-a on són els fitxers i què ocupen
+**3. A quin directori es guarden els fitxers de dades? Fes un llistat de
+a on són els fitxers i què ocupen**
 
 El directori on es guarden els fitxers de dades es en el /var/lib/mysql
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image20.png)
 
-Quina és la compressió per defecte que utilitza per les taules? Com ho
+**4. Quina és la compressió per defecte que utilitza per les taules? Com ho
 faries per canviarlo. Per exemple utilitza Zlib o ZSTD o sense
-compressió.
+compressió.**
 
 Per defecte la compressio de taules son les tres
 
@@ -156,10 +154,9 @@ I com es veu se ha canviat la compressio
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image23.png)
 
-ACTIVITAT 4. INNODB part I. REALITZA ELS SEGÜENTS APARTATS (obligatòria)
-(2 pu
+# **ACTIVITAT 4 -- INNODB part I. REALITZA ELS SEGÜENTS APARTATS **
 
-Exercici 1
+** 1. Desactiva l’opció que ve per defecte de innodb_file_per_table**
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image24.png)
 
@@ -167,7 +164,7 @@ COm es veu esta desactivat
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image25.png)
 
-### Exercici 2
+** 2. Quins són els permisos i l'usuari i grup de la carpeta que conté el directori de dades (datadir)**
 
 Els permisos de de la carpeta del directori que es el mysql els te mysql
 tan el propietari y el grup.Els permisos que te el propietari son de
@@ -178,20 +175,20 @@ execucio..
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image26.png)
 
-#### EXERCICI 3
+**3. Mostra quina és la mida del tablespace de sistema (System Tablespace)**
 
 Per veure la mida que te utilitzarem la seguent sentencia per veure
 quant pesa i es veu en la image que pesa 12M
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image27.png)
 
-. Per què té aquesta mida inicial?
+**Per què té aquesta mida inicial?**
 
 La mida es 12M perque com no hem configurat el arxhiu abans de iniciar
 el msyql et crea un arxiu perdefecte que es diu ibdata1 amb una mida de
 12M una mica superior.
 
-EXERCICI4.
+**4. Importa la BD Sakila com a taules InnoDB**
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image28.png)
 
@@ -199,36 +196,32 @@ Com es veu al instalar Sakila el ibdata1 a pujat una mica la mida init 0
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image29.png)
 
-EXERCICI 5.
+**5. Quin/quins són els fitxers de dades? A on es troben i quina és la seva mida?**
 
 Els fitxers de dades es troben anant a la ruta seguent /var/lib/mysql i
 com es veu en la captura tenim un arxchiu anomennat ibdata1
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes//image30.png)
 
-y la seva mida son 12 M una mica mes
+La seva mida son 12 MB i una mica mes
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image31.png)
 
-### EXERCICI 6
+**6. Canvia la configuració del MySQL per:**
 
-### 
+   **1.Per poder cambiar la localitzacio primer tenim que anar a la ruta seguent**
 
-### Per poder cambiar la localitzacio primer tenim que anar a la ruta seguent
+   ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image32.png)
 
-![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image32.png)
+   Una vegada a dins del arxiu my.cnf canviem la ruta del datadir a la carpeta creada hd-mysql
 
-Una vegada a dins del arxiu my.cnf canviem la ruta del datadir a la
-carpeta creada hd-mysql
+   ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image33.png)
 
-![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image33.png)
+   I una vegada cambiat això creem els dos ibdatas a la ruta creada amb el parametre seguent
 
-I una vegada cambiat això creem els dos ibdatas a la ruta creada amb el
-parametre seguent
+  ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image34.png)
 
-![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image34.png)
-
-### Despres de fer això reiniciem el mysql y no podrem entrar al mysql 
+  Despres de fer això reiniciem el mysql y no podrem entrar al mysql 
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image35.png)
 
