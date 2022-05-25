@@ -222,31 +222,7 @@ I una vegada cambiat això creem els dos ibdatas a la ruta creada amb el paramet
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image34.png)
 
-Despres de fer això reiniciem el mysql y no podrem entrar al mysql 
-
-![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image35.png)
-
-Tindrem que demanar la contrasenya provisional y fer un secure installation 
-
-![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image36.png)
-
-Primer fer la comanda seguent per tenir una contrasenya provisional:
-
-![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image37.png)
-
-Despres fer la securitzacio amb la comanda seguent:
-
-![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image38.png)
-
-Una vegada canviada la contrasenya ja podem anar al mysql y camviem la
-contrasenya a patata
-
-![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image39.png)
-
-Ara li asignarem al autoextend que pugi 5M amb las seguent sentencia y
-com es veu ja ha canviat a els 5 MB
-
-![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image40.png)
+Ara guardem, sortim del my.cnf i creem els discos 
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image41.png)
 
@@ -274,13 +250,45 @@ Com es veu a generat els ibdata els disks
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image52.png)
 
-ACTIVITAT 5. INNODB part II. REALITZA ELS SEGÜENTS APARTATS
+Després de comprovar que s'han generat els ibdates en els diskos tindrem que demanar la contrasenya provisional y fer un secure installation 
+
+![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image36.png)
+
+Primer fer la comanda seguent per tenir una contrasenya provisional:
+
+![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image37.png)
+
+Despres fer la securitzacio amb la comanda seguent:
+
+![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image38.png)
+
+Una vegada canviada la contrasenya ja podem anar al mysql y camviem la
+contrasenya a patata
+
+![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image39.png)
+
+Ara li asignarem al autoextend que pugi 5M amb las seguent sentencia y
+com es veu ja ha canviat a els 5 MB
+
+![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image40.png)
+
+# **ACTIVITAT 5 -- INNODB part II. REALITZA ELS SEGÜENTS APARTATS**
+
+**1.Partint de l'esquema anterior configura el Percona Server perquè cada taula generi el seu
+propi tablespace en una carpeta anomenada tspaces**
+
+Previament hem de crear la carpeta donarli permisos, i segudament assignar a la ruta el usuari que volem que fagi l'accio en aquest cas el de mysql
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image53.png)
 
+Afegim una nova ruta per tal que innodb reconegui que a carpeta es seva
+
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image54.png)
 
-ACTIVITAT 6. INNODB part III. REALITZA ELS SEGÜENTS APARTATS
+# **ACTIVITAT 6 -- INNODB part III. REALITZA ELS SEGÜENTS APARTATS**
+
+Primer creem els tablespaces afegim la ruta 
+
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image55.png)
 
