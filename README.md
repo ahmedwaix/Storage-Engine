@@ -30,20 +30,19 @@
 d'aquesta**
 
 Per poder veure els motors d'
-emmagatzematge que estan actius utilitzarem la sentencia show engines
-per veure els que estan activats i com veiem en la captura estan tots
-activats menys el FEDERATED.![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image1.png)
+emmagatzematge que estan actius utilitzarem la sentencia ***show engines***
+per veure els que estan activats, tal com veiem en la captura estan tots
+activats menys el **FEDERATED**.![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image1.png)
 
 **2\. Com puc saber quin és el motor d'emmagatzematge per defecte. Mostra
 com canviar aquest paràmetre de tal manera que les noves taules que
 creem a la BD per defecte utilitzin el motor MyISAM?**
 
 Per saber quin es el motor d'emmagatzematge per defecte tenim que
-utilitzar la sentencia show engines i es veu en la captura que el InnoDB
-es el motor de emmagatzematge ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image2.png)
+utilitzar la sentencia ***show engines*** i tal com es veu en la captura que el InnoDB
+es el motor d'emmagatzematge ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image2.png)
 
-Per poder canviar el motor de emmagatzematge y passi al myISAM tenim que
-primer anar a la ruta següent i editar el arxiu my.cnf
+Per poder canviar el motor de emmagatzematge i aquest passi al myISAM hem de anar a la ruta següent i editar l'arxiu "my.cnf"
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image3.png)
 
@@ -124,7 +123,8 @@ Ara fem un nano per veure el seu contingut
 
 # **EXERCICI 3 -- STORAGE ENGINE MyRocks**
 
-** 1. Crea una Base de dades amb 2 o 3 taules i insereix-hi contingut.
+**1. Crea una Base de dades amb 2 o 3 taules i insereix-hi contingut.**
+
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image18.png)
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image19.png)
@@ -153,17 +153,17 @@ I com es veu se ha canviat la compressio
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image23.png)
 
-# **ACTIVITAT 4 -- INNODB part I. REALITZA ELS SEGÜENTS APARTATS **
+# **ACTIVITAT 4 -- INNODB part I. REALITZA ELS SEGÜENTS APARTATS**
 
-** 1. Desactiva l’opció que ve per defecte de innodb_file_per_table**
+**1. Desactiva l’opció que ve per defecte de innodb_file_per_table**
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image24.png)
 
-COm es veu esta desactivat
+Tal i com es veu esta desactivat
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image25.png)
 
-** 2. Quins són els permisos i l'usuari i grup de la carpeta que conté el directori de dades (datadir)**
+**2. Quins són els permisos i l'usuari i grup de la carpeta que conté el directori de dades (datadir)**
 
 Els permisos de de la carpeta del directori que es el mysql els te mysql
 tan el propietari y el grup.Els permisos que te el propietari son de
@@ -208,7 +208,7 @@ La seva mida son 12 MB i una mica mes
 
 **6. Canvia la configuració del MySQL per:**
 
-**1. Canviar la localització del directori de dades a /hd-mysql**
+  **1. Canviar la localització del directori de dades a /hd-mysql**
 
 Per poder cambiar la localitzacio primer tenim que anar a la ruta seguent
 
