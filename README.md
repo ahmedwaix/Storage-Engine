@@ -334,11 +334,11 @@ Ens redirigim a la ruta per visualitzar les taules de la base de sakila
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image57.png)
 
-Ara eliminem la taula actor del tablespace 1, per comprobar si eliminant la taula segueixen totes les dades, ja que previament estaben vinculades 
+Ara eliminem el archiu actor.ibd que esta afegit al tablespace 1 , per comprobar si eliminant el archiu segueixen totes les dades, ja que previament estaben vinculades 
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image59.png)
 
-Ara eliminem la taula city del tablespace 2, per comprobar si eliminant la taula segueixen totes les dades, ja que previament estaben vinculades 
+Ara eliminem el archiu city.ibd que esta afegit al tablespace 2, per comprobar si eliminant el archiu segueixen totes les dades, ja que previament estaben vinculades 
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image58.png)
 
