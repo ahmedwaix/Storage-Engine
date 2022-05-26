@@ -160,7 +160,7 @@ I com es veu se ha canviat la compressio a una sola.
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image23.png)
 
-# **ACTIVITAT 4 -- INNODB part I. REALITZA ELS SEGÜENTS APARTATS**
+# **ACTIVITAT 4 -- INNODB part I**
 
 **1. Desactiva l’opció que ve per defecte de innodb_file_per_table**
 
@@ -276,7 +276,7 @@ com es veu ja ha canviat a els 5 MB
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image40.png)
 
-# **ACTIVITAT 5 -- INNODB part II. REALITZA ELS SEGÜENTS APARTATS**
+# **ACTIVITAT 5 -- INNODB part II**
 
 **1.Partint de l'esquema anterior configura el Percona Server perquè cada taula generi el seu
 propi tablespace en una carpeta anomenada tspaces**
@@ -289,7 +289,7 @@ Afegim una nova ruta per tal que innodb reconegui que a carpeta es seva
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image54.png)
 
-# **ACTIVITAT 6 -- INNODB part III. REALITZA ELS SEGÜENTS APARTATS**
+# **ACTIVITAT 6 -- INNODB part III**
 
 Primer creem els tablespaces afegim la ruta 
 
