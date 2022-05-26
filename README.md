@@ -300,13 +300,19 @@ Tal com es veu s'ha incrementat els 5M.
 **1.Partint de l'esquema anterior configura el Percona Server perquè cada taula generi el seu
 propi tablespace en una carpeta anomenada tspaces**
 
-Previament hem de crear la carpeta donarli permisos, i segudament assignar a la ruta el usuari que volem que fagi l'accio en aquest cas el de mysql
+Previament hem de crear la carpeta donarli permisos, i segudament canviar i assignar a la ruta el usuari que volem que fagi l'accio en aquest cas el de mysql
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image53.png)
 
-Afegim una nova ruta per tal que innodb reconegui que a carpeta es seva
+Afegim una nova ruta per tal que innodb reconegui que la carpeta es seva
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image54.png)
+
+Ara creem les taules que estarán situades en la carpeta **tspaces**
+ 
+Ara anem a la ruta per veure si està tal com es veu en la carpeta tspaces esta la base de dades **"test"**
+ 
+Ara entrem a la carpeta de la ruta de la base de dades i veiem que están les 2 taules creades en format **.ibd**
 
 # **ACTIVITAT 6 -- INNODB part III**
 
