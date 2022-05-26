@@ -384,6 +384,6 @@ Per poder mirar les dirty pages hem d'utilitzar la seguent sentència
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image71.png)
 
-I  per verure el número total de dirty pages que hi ha anem a l'apartat de buffer pool and memory i busquem on posa modified db pages i com es veu tenim 0.
+I  per veure el número total de dirty pages que hi ha anem a l'apartat de buffer pool and memory i busquem on posa modified db pages i com es veu tenim 0.
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image72.png)
