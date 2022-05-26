@@ -322,30 +322,43 @@ Ara entrem a la carpeta de la ruta de la base de dades i veiem que están les 2 
 
 # **ACTIVITAT 6 -- INNODB part III**
 
-Primer creem els tablespaces afegim la ruta 
-
+Primer creem les tablespaces, li assignem un nom (**ts1**,**ts2**), les afegim a una ruta i fem que l'entengui mitjançant el motor InnoDB
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image55.png)
 
+Modifiquem les taules ***actors,category*** *i* ***address***  del tablespace **ts1** fem el mateix amb la reta de les taules de la taula ts2
+
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image56.png)
+
+Ens redirigim a la ruta per visualitzar les taules de la base de sakila
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image57.png)
 
-Borrem per tbalespace 1
-
-![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image58.png)
-
-Borrem per tbalespace 2
+Ara eliminem la taula actor del tablespace 1, per comprobar si eliminant la taula segueixen totes les dades, ja que previament estaben vinculades 
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image59.png)
 
+Ara eliminem la taula city del tablespace 2, per comprobar si eliminant la taula segueixen totes les dades, ja que previament estaben vinculades 
+
+![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image58.png)
+
+Entrem al mysql
+
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image60.png)
+
+Utilitzem la base de dades sakila
+
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image61.png)
+
+Fem un **"SHOW"**, per veure el contingut, tal com es veu encara havent-les eliminat tornen a estar!
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image62.png)
 
+Ara fem **SELECT** de tot de la tabla actor per visualitzar si segueixen totes les dades, tal com es veu segueixen allà
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image63.png)
+
+Fem el mateix pero amb la taula city que aquesta correspon a la ts2
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image64.png)
 
@@ -353,24 +366,24 @@ Borrem per tbalespace 2
 
 **1.	Com podem comprovar (Innodb Log Checkpointing):**
 
-Per poder  veure el LSN  tenim que utilizar aquesta sentencia mysql 
+**LSN** 
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image68.png)
 
-L'últim LSN actualitzat a disc 
+**L'últim LSN actualitzat a disc** 
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image69.png)
  
-Quin és l'últim LSN que se li ha fet Checkpoint
+**Quin és l'últim LSN que se li ha fet Checkpoint**
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image70.png) 
 
 **2.	Com podem mirar el número de pàgines modificades (dirty pages)? ¿I el número total de pàgines?**
 
-Per poder mirar les dirty pages tenim que utilitzar la seguent sentencia  
+Per poder mirar les dirty pages hem d'utilitzar la seguent sentència  
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image71.png)
 
-I  per verure le numero total de dirty pages que hi ha anem en el apartat de buffer pool and memory i busquem on posa modified db pages i com es veu tenim 0.
+I  per verure el número total de dirty pages que hi ha anem a l'apartat de buffer pool and memory i busquem on posa modified db pages i com es veu tenim 0.
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image72.png)
