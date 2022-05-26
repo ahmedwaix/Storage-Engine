@@ -226,21 +226,35 @@ I una vegada cambiat això creem els dos ibdatas a la ruta creada amb el paramet
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image34.png)
 
-Ara guardem, sortim del my.cnf i creem els discos 
+Ara guardem, sortim del my.cnf i creem els discos. Li diem que sigui una particio primària, elegim en aquest cas que volem crear una partició de disc asignem el valor de +1024M per asignar que li volem donar 1GB de memoria a la partició. 
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image41.png)
 
+Ara li hem de donar permisos a les particions creades i ho hem amb el ***CHMOD**** i el permis de **777** que aquest ens dona el permis de **RXW**(lectura, escriptura i execució). Seguidament utilizem el ***mkfs.ext4*** per tal de donar-li a les particions creades el format de extensió 4 (quatre sistemes d'arxius extessos).
+
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image42.png)
+
+Arribant en aquest pas creem les carpetes que aquestes li assignarem amb el nom de **disk1** i **disk2** aquestes les col·locarem a l'arrel, i després aquestes les muntem en les particions que vam crear previament.
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image43.png)
 
+Donem permisos al  **lost+found** creat quan vam muntar la carpeta a la partició.
+
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image44.png)
+
+Canviem els usuari root de la carpeta /disk1 per un de mysql 
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image45.png)
 
+Fem el mateix amb el /disk2, com també hem de canviar l'usuari de la carpeta /hd-mysql
+
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image46.png)
 
+Segudament ens redirigim a l'arxiu ***/etc/fstab*** on en ella indicarem les particions el punt de muntatge i el sistema d'arxiu amb el que el fem.
+
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image47.png)
+
+Guardem i ara executem la següent comanda per tal de que es monti automàticament el que hem fet per tal que quan reiniciem la maquina i la tornem a engegar estigui ja tot muntat, que no haguem de fer tot els passos previs de nou.
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image48.png)
 
