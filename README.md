@@ -309,10 +309,16 @@ Afegim una nova ruta per tal que innodb reconegui que la carpeta es seva
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image54.png)
 
 Ara creem les taules que estarán situades en la carpeta **tspaces**
+
+![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image65.png)
  
 Ara anem a la ruta per veure si està tal com es veu en la carpeta tspaces esta la base de dades **"test"**
+
+![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image66.png)
  
 Ara entrem a la carpeta de la ruta de la base de dades i veiem que están les 2 taules creades en format **.ibd**
+
+![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image67.png)
 
 # **ACTIVITAT 6 -- INNODB part III**
 
