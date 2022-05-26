@@ -212,7 +212,7 @@ La seva mida son 12 MB i una mica mes
 
 **6. Canvia la configuració del MySQL per:**
 
-  **1. Canviar la localització del directori de dades a /hd-mysql**
+**Canviar la localització del directori de dades a /hd-mysql**
 
 Per poder cambiar la localitzacio primer hem d'anar a la ruta següent ***"/etc/my.cnf"***
 
@@ -258,13 +258,19 @@ Guardem i ara executem la següent comanda per tal de que es monti automàticame
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image48.png)
 
+Els directoris **/disk1** i **/disk2** els col·loquem en el innodb directory per tal que sigui seva i el seu motor la reconegui, seguidament en el ***innodb_data_home_dir*** el deixem buit per tal que puguem fer mes d'una ruta,fer rutes absolutes... i finalment en el ***innodb_data_file_path*** assignem que el ibdata1 es col·loqui en el /disk1 amb una capacitat de 50 M amb el disk2 el mateix pero en aquest cas que sigui autoextend per tal que sigui autoextes que vagi creixent.
+
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image49.png)
+
+En aquesta captura borrem els fitxers amb la comanda que mostrem i seguit de (**"*"**) que el que fa es eliminar tot de la ruta ***/var/lib/hd-mysql/***. Això ho fem per tal que quan es fagi els reinici es crea tot de nou els fitxers i que despres els ibdates que li hem assignat les rutes es crean directament on l'hem dit. Reiniciem el servei de mysql quan fem la següent comanda.
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image50.png)
 
-Com es veu a generat els ibdata els disks
+Com es veu a generat els ibdata els disks quean ens redirigim a la carpeta de /disk1
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image51.png)
+
+El mateix amb la  carpeta de /disk2
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image52.png)
 
@@ -276,17 +282,16 @@ Primer fer la comanda seguent per tenir una contrasenya provisional:
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image37.png)
 
-Despres fer la securitzacio amb la comanda seguent:
+Després fem la securització amb la comanda següent, per tal de permetre establir una serie de parámetros básicos de seguretat, com la de crear una contrasenya per el compte de root. Permetra l'acces només desde localhost per el compte de root
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image38.png)
 
-Una vegada canviada la contrasenya ja podem anar al mysql y camviem la
-contrasenya a patata
+Una vegada canviada la contrasenya ja podem anar al mysql y canviar la contrasenya a **"patata"**
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image39.png)
 
-Ara li asignarem al autoextend que pugi 5M amb las seguent sentencia y
-com es veu ja ha canviat a els 5 MB
+Ara li asignarem el autoextend que incrementi 5M amb las seguent sentencia. 
+Tal com es veu s'ha incrementat els 5M.
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image40.png)
 
