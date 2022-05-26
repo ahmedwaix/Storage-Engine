@@ -322,11 +322,11 @@ Ara entrem a la carpeta de la ruta de la base de dades i veiem que están les 2 
 
 # **ACTIVITAT 6 -- INNODB part III**
 
-Primer creem les tablespaces, li assignem un nom (**ts1**,**ts2**), les afegim a una ruta i fem que l'entengui mitjançant el motor InnoDB
+Primer creem les tablespaces, li assignem un nom (**ts1**,**ts2**), i les introduim cada una al seu disk corresponent
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image55.png)
 
-Modifiquem les taules ***actors,category*** *i* ***address***  del tablespace **ts1** fem el mateix amb la reta de les taules de la taula ts2
+Modifiquem les taules ***actors,category*** *i* ***address***  per introduir-les a dins del tablespace **ts1** fem el mateix amb la resta de les taules de la taula ts2
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image56.png)
 
