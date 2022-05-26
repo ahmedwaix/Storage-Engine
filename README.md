@@ -230,7 +230,7 @@ Ara guardem, sortim del my.cnf i creem els discos. Li diem que sigui una partici
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image41.png)
 
-Ara li hem de donar permisos a les particions creades i ho hem amb el ***CHMOD**** i el permis de **777** que aquest ens dona el permis de **RXW**(lectura, escriptura i execució). Seguidament utilizem el ***mkfs.ext4*** per tal de donar-li a les particions creades el format de extensió 4 (quatre sistemes d'arxius extessos).
+Ara li hem de donar permisos a les particions creades i ho hem amb el ***CHMOD*** i el permis de **777** que aquest ens dona el permis de **RXW**(lectura, escriptura i execució). Seguidament utilizem el ***mkfs.ext4*** per tal de donar-li a les particions creades el format de extensió 4 (quatre sistemes d'arxius extessos).
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image42.png)
 
@@ -348,3 +348,29 @@ Borrem per tbalespace 2
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image63.png)
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image64.png)
+
+# **ACTIVITAT 7 -- REDOLOG**
+
+**1.	Com podem comprovar (Innodb Log Checkpointing):**
+
+Per poder  veure el LSN  tenim que utilizar aquesta sentencia mysql 
+
+![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image68.png)
+
+L'últim LSN actualitzat a disc 
+
+![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image69.png)
+ 
+Quin és l'últim LSN que se li ha fet Checkpoint
+
+![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image70.png) 
+
+**2.	Com podem mirar el número de pàgines modificades (dirty pages)? ¿I el número total de pàgines?**
+
+Per poder mirar les dirty pages tenim que utilitzar la seguent sentencia  
+
+![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image71.png)
+
+I  per verure le numero total de dirty pages que hi ha anem en el apartat de buffer pool and memory i busquem on posa modified db pages i com es veu tenim 0.
+
+![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image72.png)
