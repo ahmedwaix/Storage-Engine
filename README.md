@@ -385,3 +385,8 @@ Per poder mirar les dirty pages hem d'utilitzar la seguent sentència
 I  per veure el número total de dirty pages que hi ha anem a l'apartat de buffer pool and memory i busquem on posa modified db pages i com es veu tenim 0.
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image72.png)
+
+# **WEBGRAFIA**
+- Elemento de lista 2
+* Elemento de lista 3
+* Elemento de lista 4
