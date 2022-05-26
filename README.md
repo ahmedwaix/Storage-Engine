@@ -366,7 +366,7 @@ Fem el mateix pero amb la taula city que aquesta correspon a la ts2
 
 **1.	Com podem comprovar (Innodb Log Checkpointing):**
 
-**LSN** 
+**Per veure on esta LSN hem de untilitzar la següent sentencia mysql** 
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image68.png)
 
