@@ -174,7 +174,7 @@ Ara si fem un show  es veu que ja està desactivat
 
 **2. Quins són els permisos i l'usuari i grup de la carpeta que conté el directori de dades (datadir)**
 
-Els permisos de la carpeta del directori que es el mysql els te mysql tan el propietari y el grup. Els permisos que te el propietari són d' escritura, de lectura i d'execució que correspon els tres digits despres de la ***"d"*** despres els seguents 3 digits són del grup que te només el permís de lecura i execucio i per ultim els últims tres digits son dels altres ususaris (**OTHERS**), que tenen nomes d'execucio.
+Els permisos de la carpeta datadir els conté tant el propietari, com el del grup de mysql. Els permisos que te el propietari són d' escritura, de lectura i d'execució que correspon els tres digits despres de la ***"d"***. Els seguents 3 digits corresponen al grup que te el permís de lecura i el d'execucio i  els últims tres digits son dels altres ususaris (**OTHERS**), que tenen nomes d'execucio.
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image26.png)
 
