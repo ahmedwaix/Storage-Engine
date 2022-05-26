@@ -387,6 +387,6 @@ I  per veure el número total de dirty pages que hi ha anem a l'apartat de buffe
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image72.png)
 
 # **WEBGRAFIA**
-- Elemento de lista 2
-* Elemento de lista 3
-* Elemento de lista 4
+* ***https://stackoverflow.com/questions/10107845/how-to-fix-innodb-dirty-pages***
+* ***https://dev.mysql.com/doc/refman/5.6/en/innodb-system-tablespace.html#:~:text=The%20system%20tablespace%20is%20the,one%20or%20more%20data%20files***
+* ***https://www.percona.com/blog/2006/07/17/show-innodb-status-walk-through/#:~:text=To%20start%20with%20basics%2C%20SHOW,available%20in%20SHOW%20STATUS%20output.***
