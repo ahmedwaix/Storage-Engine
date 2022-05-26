@@ -29,8 +29,7 @@
 (quins estan actius)? Mostra al comanda utilitzada i el resultat
 d'aquesta**
 
-Per poder veure els motors d'
-emmagatzematge que estan actius utilitzarem la sentencia ***show engines***
+Per poder veure els motors d'emmagatzematge que estan actius utilitzarem la sentència ***show engines***
 per veure els que estan activats, tal com veiem en la captura estan tots
 activats menys el **FEDERATED**.![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image1.png)
 
@@ -38,8 +37,7 @@ activats menys el **FEDERATED**.![](https://github.com/ahmedwaix/Storage-Engine/
 com canviar aquest paràmetre de tal manera que les noves taules que
 creem a la BD per defecte utilitzin el motor MyISAM?**
 
-Per saber quin es el motor d'emmagatzematge per defecte tenim que
-utilitzar la sentencia ***show engines*** i tal com es veu en la captura que el InnoDB
+Per saber quin es el motor d'emmagatzematge per defecte hem d'utilitzar la sentència ***show engines*** i tal com es veu en la captura que el InnoDB
 es el motor d'emmagatzematge ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image2.png)
 
 Per poder canviar el motor de emmagatzematge i aquest passi al myISAM hem de anar a la ruta següent i editar l'arxiu "my.cnf"
@@ -48,7 +46,7 @@ Per poder canviar el motor de emmagatzematge i aquest passi al myISAM hem de ana
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image3.png)
 
 
-Una vegada a dins de l'arxiu "my.cnf" hem de posar el següentt paràmetre
+Una vegada a dins de l'arxiu "my.cnf" hem de posar el següent paràmetre
 per tal de poder canviar el motor d'emmagatzematge. Una vegada fet, guardem
 i sortim!
 
@@ -56,14 +54,14 @@ i sortim!
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image4.png)
 
 
-Ara hem de tornar al mysql aquesta vegada introduïm la sentencia **"SHOW ENGINES"** i es veu que
-MyISAM a passat per defecte com motor de emmagatzematge.
+Ara hem de tornar al mysql aquesta vegada introduim la sentencia **"SHOW ENGINES"** i es veu que
+MyISAM a passat per defecte com motor d'emmagatzematge.
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image5.png)
 
 **3\. Com podem saber quin és el motor d'emmagatzematge per defecte?**
 
-Per saber quin es el motor de emmagatzematge per defecte hem d'utilitzar la següent sentencia mysql.
+Per saber quin es el motor de emmagatzematge per defecte hem d'utilitzar la següent sentència mysql.
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image6.png)
 
@@ -87,18 +85,18 @@ comanda i instal·larà el plugin engine de RocksDB
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image9.png)
 
-Per assegurar que esta activat utilitzarem la següent sentencia i
+Per assegurar que esta activat utilitzarem la següent sentència i
 tal com es veu RocksDB esta activat.
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image10.png)
 
 # **ACTIVITAT 2 -- STORAGE ENGINE CSV** 
 
-Per utilitzar el **CSV**, primer creem una base de dades amb las següent sentencia.
+Per utilitzar el **CSV**, primer creem una base de dades amb las següent sentència.
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image11.png)
 
-Ara utilitzarem la següent sentencia per utilitzar la base de dades 
+Ara utilitzarem la següent sentència per utilitzar la base de dades 
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image12.png)
 
@@ -107,7 +105,7 @@ Una vegada fet això creem una taula amb el seus camps que tenen que ser
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image13.png)
 
-Introduirem dades amb la següent sentencia
+Introduirem dades amb la següent sentència
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image14.png)
 
@@ -195,7 +193,7 @@ el msyql et crea un arxiu perdefecte que es diu ibdata1 amb una mida de
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image28.png)
 
-Com es veu al instalar Sakila el ibdata1 a pujat una mica la mida init 0
+Com es veu al instalar Sakila el ibdata1 a pujat una mica la mida
 
 ![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/image29.png)
 
