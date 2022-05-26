@@ -389,4 +389,4 @@ I  per veure el número total de dirty pages que hi ha anem a l'apartat de buffe
 # **WEBGRAFIA**
 * ***https://stackoverflow.com/questions/10107845/how-to-fix-innodb-dirty-pages***
 * ***https://dev.mysql.com/doc/refman/5.6/en/innodb-system-tablespace.html#:~:text=The%20system%20tablespace%20is%20the,one%20or%20more%20data%20files***
-* ***https://www.percona.com/blog/2006/07/17/show-innodb-status-walk-through/#:~:text=To%20start%20with%20basics%2C%20SHOW,available%20in%20SHOW%20STATUS%20output.***
+* ***https://www.percona.com/blog/2006/07/17/show-innodb-status-walk-through/#:~:text=To%20start%20with%20basics%2C%20SHOW,available%20in%20SHOW%20STATUS%20output***
