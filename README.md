@@ -1,4 +1,7 @@
 # Storage-Engine
+
+![](https://github.com/ahmedwaix/Storage-Engine/blob/main/Imagenes/storage.png)
+
 **CFGS Administració de Sistemes Informàtics a la Xarxa**
 
 **Mòdul 10:** Administració de sistemes gestors de base de dades (ASIX)
